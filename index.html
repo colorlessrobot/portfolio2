@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div id="relogio"></div>
+            <h1>MYLENE CAVALCANTI</h1>
+            <hr>
+            </hr>
+            <h1>Dados pessoais:</h1>
+            <p>E-MAIL: mylene.cavalcant@gmail.com </p>
+            <p>TELEFONE: +55 (81) 9 9995-0506 </p>
+            <p>ENDEREÇO: Mangabeira, Recife - PE </p>
+            <hr>
+            </hr>
+            <h1>Sobre mim:</h1>
+            <p> Advinda da periferia da zona norte de Recife, sou estudante do 2º período de Análise e Desenvolvimento
+                de
+                Sistemas pelo SENAC. Me considero uma pessoa efêmera, autodidata e criativa. Busco um processo constante
+                de
+                evolução.</p>
+            <hr>
+            </hr>
+            <h1> Formação:</h1>
+            <p>Liceu de Ares e Ofícios (2013 - 2019) - Ensino fundamental e médio.
+            </p>
+            <p> Universidade Federal de Pernambuc (2021 - Cursando) - Superior em Engenharia Mecânica (4° Período/10).
+            </p>
+            <p> SENAC (2023 - Cursando) - Superior em Análise e Desenvolvimento de Sistemas (2° Período/5). </p>
+            <hr>
+            </hr>
+            <h1> Experiência Profissional:</h1>
+            <p> Consultora de Vendas e Projetos (2021 - 2022) - EIXO Consultoria - Coordenação dos sistemas de
+                marketing,
+                prospecções ativas com os clientes e desenvolvimento de projetos. </p>
+            <p> Fotógrafa autônoma (2017 - atualmente) - Fotos de paisagismo e ensaios de marcas.</p>
+            <hr>
+            <h1>Idiomas:</h1>
+            <p> Inglês - Intermediário (SENAC Idiomas 2017 - 2018) </p>
+            <p> Espanhol Básico - (Cursos online de idiomas)</p>
+            <p> Latim Básico - (Autodidata)</p>
+            <hr>
+            </hr>
+            <h1>Soft Skills:</h1>
+            <p>Proatividade e cooperação em equipe;
+            </p>
+            <p>Autodidata;
+            </p>
+            <p> Facilidade em expressar ideias;</p>
+            <p>Bom pensamento crítico; </p>
+            <p>Saber ouvir as pessoas. </p>
+            <hr>
+            </hr>
+            <h1>Hard Skills:</h1>
+            <p> Software (Arduino, C++, AutoCAD, Solidworks, etc);</p>
+            <p>Pacote Office e CE;
+            </p>
+            <p> Linguage C e C++;</p>
+            <p>Fotografia, Desenho e Design;
+            </p>
+            <p> Adobe Photoshop; </p>
+            <p> Matemática financeira.
+            </p>
+        </div>
+    </body>
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    h1, p, #relogio {
+        color: white;
+    }
+    .container {
+        width: 50%;
+        border: 1px solid white;
+        padding: 5px;
+    }
+</style>
+<script>
+    const relogio = document.getElementById("relogio");
+
+    function setRelogio() {
+        let date = new Date();
+        let horas = date.getHours();
+        let minutos = date.getMinutes();
+        let segundos = date.getSeconds();
+
+        relogio.innerText = `${horas}:${minutos}:${segundos}`;
+    }
+    setInterval(setRelogio, 1000);
+</script>

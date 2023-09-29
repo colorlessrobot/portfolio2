@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+h1,p,#relogio
+ {
+    color: white;
+}
+
+.container {
+    width: 50%;
+    border: 1px solid white;
+    padding: 5px;
+}
